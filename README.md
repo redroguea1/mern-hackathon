@@ -14,11 +14,7 @@ Your team has the know how to finish SEI CAFE, right here, right now!
 
 **ONE Team Member needs to do the following:**
 
-- Create a copy of your `~/code/sei-cafe-codealong` folder and name it something like `~/code/sei-cafe-save`.
-
-- `cd ~/code/sei-cafe-codealong`
-
-- Sync with the starter code in the repo as usual:  `git fetch --all` then `git reset --hard origin/main`
+- Use the starter code procided.  
 
 - Go to their **personal** GitHub account and create a new **Public** repo named `mern-hackathon`.
 
