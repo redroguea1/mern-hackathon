@@ -43,7 +43,7 @@ Good job!
 - Open the project in VS Code:  `code .`
 
 - The project won't yet run because several required parts of projects are git ignored (**.env**, **node_modules**, etc.).  You'll need to do the following:
-  - Copy your **.env** file from **~/code/sei-cafe-codealong** into your new project:  `cp ../sei-cafe-codealong/.env .`
+  - Copy your **.env** file from sei-cafe-code-along
   - **Don't** make any changes in the **.env**, otherwise you won't have menu items and you'll have an invalid token if you change the `SECRET`.
   - Install the Node modules: `npm i`
   - Finally, the Express server needs the **build** folder which holds the production React app that it references in **server.js**.  Build the React app:  `npm run build`
