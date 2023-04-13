@@ -14,7 +14,7 @@ Your team has the know how to finish SEI CAFE, right here, right now!
 
 **ONE Team Member needs to do the following:**
 
-- Use the starter code procided.  
+- Use the starter code provided.  
 
 - Go to their **personal** GitHub account and create a new **Public** repo named `mern-hackathon`.
 
@@ -24,13 +24,11 @@ Your team has the know how to finish SEI CAFE, right here, right now!
 
 - Once each Team Member (collaborator) accepts the invite emailed to them, they will be able to push directly to the repo - avoiding the necessity to fork the repo and issue pull requests when contributing code!
 
-- Still in your `~/code/sei-cafe-codealong` folder that you synced with earlier, let's remove the current `origin` remote:  `git remote remove origin`.
+- In the cloned repo, let's remove the current `origin` remote:  `git remote remove origin`.
 
 - Now add a new remote that points to the URL of the new GH repo you provided the other Team Members:  `git remote add origin <paste url here>`
 
 - Run this to push the starter code to the new repo: `git push -u --force origin main`.
-
-- You can rename your `sei-cafe-codealong` folder to `mern-hackathon` if you wish.
 
 Good job!
 
