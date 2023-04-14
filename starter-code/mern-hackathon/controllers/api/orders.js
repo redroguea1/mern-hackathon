@@ -39,5 +39,7 @@ async function checkout(req, res) {
 }
 
 async function getOrders(req, res) {
-
+  //everything that matches return all the data. 
+  const orders = await Order.find();
+  res.json(orders);
 }

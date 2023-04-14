@@ -10,16 +10,19 @@ import * as ordersAPI from '../../utilities/orders-api'
 export default function OrderHistoryPage({ user, setUser }) {
 
   const [orders, setOrders] = useState([]);
+  const [pastOrder, setPastOrder] = useState(null);
 
   
   useEffect(function() {
     async function getPreviousOrders() {
       const orders = await ordersAPI.getOrderHistory();
       setOrders(orders);
+      setPastOrder(orders[1] || null)
     }
-    // getPreviousOrders()
-  }, [])
+    getPreviousOrders()
+  }, []);
   
+
   //rendered UI
 
   return (
@@ -30,9 +33,9 @@ export default function OrderHistoryPage({ user, setUser }) {
         <UserLogOut user={user} setUser={setUser} />
       </aside>
       {/* Render an OrderList component (needs to be coded) */}
-      <OrderList />
+      <OrderList orders={orders} />
       {/* Render the existing OrderDetail component */}
-      <OrderDetail />
+      <OrderDetail order={pastOrder}/>
     </main>
   );
 }
