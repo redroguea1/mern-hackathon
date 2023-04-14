@@ -34,8 +34,6 @@ Good job!
 
 **All other Team Members do the following:**
 
-- `cd ~/code`
-
 - Clone the repo using the link slacked to them:  `git clone <paste url here>`
 
 - Move into the repo's folder:  `cd mern-hackathon`
