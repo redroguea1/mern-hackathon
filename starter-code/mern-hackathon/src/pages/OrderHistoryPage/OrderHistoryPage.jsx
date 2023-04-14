@@ -17,7 +17,7 @@ export default function OrderHistoryPage({ user, setUser }) {
     async function getPreviousOrders() {
       const orders = await ordersAPI.getOrderHistory();
       setOrders(orders);
-      setPastOrder(orders[1] || null)
+      //setPastOrder(orders[1] || null)
     }
     getPreviousOrders()
   }, []);
@@ -33,9 +33,10 @@ export default function OrderHistoryPage({ user, setUser }) {
         <UserLogOut user={user} setUser={setUser} />
       </aside>
       {/* Render an OrderList component (needs to be coded) */}
-      <OrderList orders={orders} />
+      <OrderList orders={orders} setPastOrder={setPastOrder} />
       {/* Render the existing OrderDetail component */}
-      <OrderDetail order={pastOrder}/>
+      <OrderDetail order={pastOrder} />
     </main>
   );
 }
+
