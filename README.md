@@ -98,7 +98,7 @@ The starter code includes a partially coded `<OrderHistoryPage>` that correctly 
 
 - Don't prioritize the CSS early on. However, examining the CSS of other components will help when the time comes to polish things up.
 
-- Do you remember Lake Arrowhead Homes for Sale where we copied the a `<tr>` element to use as a template for adding a new home to the DOM?  Copying and pasting the React Elements rendered by [the deployed SEI CAFE](https://sei-cafe.herokuapp.com/orders) provides a fantastic starting point for each new component's JSX!
+- Copying and pasting the React Elements rendered by [the deployed SEI CAFE](https://sei-cafe.herokuapp.com/orders) provides a fantastic starting point for each new component's JSX!
 
   <img src="https://i.imgur.com/QYrCawZ.png">
 
