@@ -32,6 +32,8 @@ export default function NewOrderPage({ user, setUser }) {
     }
     getCart();
   }, []);
+
+  
   // An empty dependency array results in the effect
   // function running ONLY after the FIRST render
   

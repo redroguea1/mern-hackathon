@@ -7,6 +7,11 @@ export function getCart() {
   return sendRequest(`${BASE_URL}/cart`);
 }
 
+// Retrieve list of prior orders
+export function getOrderHistory() {
+  return sendRequest(`${BASE_URL}/history`);
+}
+
 // Add an item to the cart
 export function addItemToCart(itemId) {
   // Just send itemId for best security (no pricing)
