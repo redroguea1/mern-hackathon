@@ -9,10 +9,22 @@ export default function OrderListItem({orders, order, setPastOrder, index}) {
 
   return (
     <div onClick={handleClick} className="OrderListItem">
-        <p>Order Id: {order.orderId}</p>
-        <p>{order.createdAt.toLocaleString()}</p>
-        <p>{order.orderTotal}</p>
-        <p>{order.totalQty}</p>
+        <div>
+          <div>
+            Order Id: <span className="smaller">{order.orderId}</span>
+          </div>
+          <div className="smaller">
+            <p>{order.createdAt.toLocaleString()}</p>
+          </div>
+          <div className="align-rt">
+            <div>
+              {order.orderTotal}
+            </div>
+            <div className="smaller">
+              <p>{order.totalQty}</p>
+            </div>
+          </div>
+        </div>
     </div>
   )
 }

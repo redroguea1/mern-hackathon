@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .OrderListItem {
     width: 100%;
     display: flex;
@@ -9,5 +13,17 @@
     background-color: var(--white);
     border: .1vmin solid var(--tan-3);
     border-radius: 1vmin;
-    font-size: 4vmin;
-  }
+    font-size: 2vmin;
+}
+
+div {
+    display: block;
+}
+
+.smaller {
+    font-size: smaller,
+}
+
+.align-rt {
+    align-items: right,
+}
